@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  background-color: aqua;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-areas:
+    "greeting greeting"
+    "block--eugen block--annie";
+}
+
+.greeting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto 50px auto;
+  padding-top: 100px;
+  grid-area: greeting;
+}
+
+.block--eugen {
+  grid-area: block--eugen;
+  text-align: center;
+}
+
+img {
+  width: 50%;
+  border-radius: 50%;
+  border: 3px solid green;
+}
+
+.block--annie {
+  grid-area: block--annie;
+  text-align: center;
+}
