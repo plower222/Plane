@@ -11,14 +11,15 @@ body {
   grid-template-areas:
     "greeting greeting"
     "block--eugen block--annie";
+  margin-bottom: 50px;
 }
 
 .greeting {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto 50px auto;
-  padding-top: 100px;
+  margin: 0 auto 25px auto;
+  padding-top: 50px;
   grid-area: greeting;
 }
 
