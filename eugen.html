@@ -9,17 +9,60 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="visually-hidden">Доверь свои задачи мне, Путник!</h1>
+      <h1 class="visually-hidden">Список дел</h1>
+      <!-- Создаем список дел -->
       <ul class="todo-list">
+        <!-- Добавляем первый элемент -->
         <li class="todo-list-item">
           <label>
-            <input type="chechbox" class="todo-list-input" />
+            <input type="checkbox" class="todo-list-input" />
             <span>Выполнить свою первую задачу</span>
           </label>
         </li>
+        <!-- Второй элемент -->
+        <li class="todo-list-item">
+          <label>
+            <input type="checkbox" class="todo-list-input" />
+            <span>Выполнить свою вторую задачу</span>
+          </label>
+        </li>
+        <!-- Тестовый с переполнением -->
+        <li class="todo-list-item">
+          <label>
+            <input type="checkbox" class="todo-list-input" />
+            <span
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+              doloribus vitae laborum, officiis minus quasi sunt numquam ex
+              voluptatum praesentium assumenda ipsa quaerat totam porro
+              voluptate placeat soluta iure corporis?</span
+            >
+          </label>
+        </li>
       </ul>
-      <p class="empty-tasks hidden">Все задачи выполнены. Ты молодец!</p>
-      <form action="https://plower222.github.io/Plane/eugen.html"></form>
+      <!-- Текст, который будет выведен при всех выполненных задачах -->
+      <p class="empty-tasks">Все задачи выполнены. Ты молодец!</p>
+      <!-- Форма для создания новых задач -->
+      <form action="https://plower222.github.io/Plane/eugen.html" method="post">
+        <input
+          type="text"
+          class="add-form-input"
+          aria-label="Описание задачи"
+          placeholder="Например, купить слона)"
+          required
+        />
+        <button class="add-form-button" type="submit">Добавить задачу</button>
+      </form>
+
+      <!-- Шаблон для новой записи -->
+      <template id="task-template">
+        <li class="todo-list-item">
+          <label>
+            <input type="checkbox" class="todo-list-input" />
+            <span></span>
+          </label>
+        </li>
+      </template>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
