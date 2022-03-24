@@ -123,3 +123,59 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.add-form {
+  display: flex;
+}
+
+.add-form-input {
+  flex-grow: 1;
+
+  box-sizing: border-box;
+  height: 46px;
+  margin-right: 16px;
+  padding: 12px;
+
+  font: inherit;
+
+  border: 1px solid #c42c96;
+  border-radius: 5px;
+}
+
+.add-form-input:focus {
+  border: 1px solid #3a0d81;
+  outline: none;
+}
+
+.add-form-input:hover {
+  box-shadow: 0 0 6px rgba(105, 178, 83, 0.6);
+}
+
+.add-form-input::placeholder {
+  color: #a1b5c4;
+}
+
+.add-form-button {
+  flex-shrink: 0;
+  padding: 12px;
+
+  font: inherit;
+  color: #fff;
+
+  background-color: #75e254;
+  border: none;
+  border-radius: 5px;
+
+  user-select: none;
+  touch-action: manipulation;
+}
+
+.add-form-button:hover,
+.add-form-button:focus {
+  background-color: #5aa045;
+  outline: none;
+}
+
+.add-form-button:active {
+  background-color: #afc013;
+}
